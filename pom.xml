@@ -6,7 +6,6 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>jexer</name>
-	<description>libgdx-sqlite</description>
 
 	<properties>
 	</properties>
@@ -32,4 +31,5 @@
 			</plugins>
 	</build>
 
+	<description>jexer with maven</description>
 </project>
