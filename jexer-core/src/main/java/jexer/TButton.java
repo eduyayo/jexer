@@ -28,13 +28,15 @@
  */
 package jexer;
 
+import static jexer.TKeypress.kbEnter;
+import static jexer.TKeypress.kbSpace;
+
 import jexer.bits.CellAttributes;
 import jexer.bits.Color;
 import jexer.bits.GraphicsChars;
 import jexer.bits.MnemonicString;
 import jexer.event.TKeypressEvent;
 import jexer.event.TMouseEvent;
-import static jexer.TKeypress.*;
 
 /**
  * TButton implements a simple button.  To make the button do something, pass

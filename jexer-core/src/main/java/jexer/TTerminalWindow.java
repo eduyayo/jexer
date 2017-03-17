@@ -28,8 +28,17 @@
  */
 package jexer;
 
-import java.io.InputStream;
+import static jexer.TKeypress.kbAltPgDn;
+import static jexer.TKeypress.kbAltPgUp;
+import static jexer.TKeypress.kbCtrlJ;
+import static jexer.TKeypress.kbCtrlPgDn;
+import static jexer.TKeypress.kbCtrlPgUp;
+import static jexer.TKeypress.kbEnter;
+import static jexer.TKeypress.kbShiftPgDn;
+import static jexer.TKeypress.kbShiftPgUp;
+
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
 import java.util.LinkedList;
@@ -43,7 +52,6 @@ import jexer.event.TMouseEvent;
 import jexer.event.TResizeEvent;
 import jexer.tterminal.DisplayLine;
 import jexer.tterminal.ECMA48;
-import static jexer.TKeypress.*;
 
 /**
  * TTerminalWindow exposes a ECMA-48 / ANSI X3.64 style terminal in a window.

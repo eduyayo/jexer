@@ -31,8 +31,8 @@ package jexer;
 import java.io.File;
 import java.io.IOException;
 import java.util.Collections;
-import java.util.List;
 import java.util.LinkedList;
+import java.util.List;
 
 /**
  * TDirectoryTreeItem is a single item in a disk directory tree view.

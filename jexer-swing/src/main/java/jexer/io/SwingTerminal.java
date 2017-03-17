@@ -28,6 +28,14 @@
  */
 package jexer.io;
 
+import static jexer.TCommand.cmAbort;
+import static jexer.TKeypress.kbBackspace;
+import static jexer.TKeypress.kbDel;
+import static jexer.TKeypress.kbEnter;
+import static jexer.TKeypress.kbEsc;
+import static jexer.TKeypress.kbShiftTab;
+import static jexer.TKeypress.kbTab;
+
 import java.awt.event.ComponentEvent;
 import java.awt.event.ComponentListener;
 import java.awt.event.KeyEvent;
@@ -39,8 +47,8 @@ import java.awt.event.MouseWheelEvent;
 import java.awt.event.MouseWheelListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
-import java.util.List;
 import java.util.LinkedList;
+import java.util.List;
 
 import jexer.TKeypress;
 import jexer.backend.AbstractTerminal;
@@ -51,8 +59,6 @@ import jexer.event.TMouseEvent;
 import jexer.event.TResizeEvent;
 import jexer.session.SessionInfo;
 import jexer.session.SwingSessionInfo;
-import static jexer.TCommand.*;
-import static jexer.TKeypress.*;
 
 /**
  * This class reads keystrokes and mouse events from an Swing JFrame.

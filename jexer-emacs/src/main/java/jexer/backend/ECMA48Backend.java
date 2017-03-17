@@ -48,10 +48,10 @@ public final class ECMA48Backend extends Backend {
     /**
      * Input events are processed by this Terminal.
      */
-    private ECMA48Terminal terminal;
+    private final ECMA48Terminal terminal;
 
     /**
-     * Public constructor.
+     * Public constructor. 
      *
      * @param listener the object this backend needs to wake up when new
      * input comes in

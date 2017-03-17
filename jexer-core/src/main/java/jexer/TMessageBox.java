@@ -28,11 +28,15 @@
  */
 package jexer;
 
+import static jexer.TKeypress.kbC;
+import static jexer.TKeypress.kbN;
+import static jexer.TKeypress.kbO;
+import static jexer.TKeypress.kbY;
+
 import java.util.ArrayList;
 import java.util.List;
 
 import jexer.event.TKeypressEvent;
-import static jexer.TKeypress.*;
 
 /**
  * TMessageBox is a system-modal dialog with buttons for OK, Cancel, Yes, or

@@ -28,15 +28,16 @@
  */
 package jexer.menu;
 
+import static jexer.TKeypress.kbEnter;
+
 import jexer.TKeypress;
 import jexer.TWidget;
 import jexer.bits.CellAttributes;
 import jexer.bits.GraphicsChars;
 import jexer.bits.MnemonicString;
 import jexer.event.TKeypressEvent;
-import jexer.event.TMouseEvent;
 import jexer.event.TMenuEvent;
-import static jexer.TKeypress.*;
+import jexer.event.TMouseEvent;
 
 /**
  * TMenuItem implements a menu item.

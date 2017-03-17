@@ -28,15 +28,20 @@
  */
 package jexer;
 
+import static jexer.TKeypress.kbDown;
+import static jexer.TKeypress.kbEsc;
+import static jexer.TKeypress.kbLeft;
+import static jexer.TKeypress.kbRight;
+import static jexer.TKeypress.kbUp;
+
 import java.util.List;
 
+import jexer.bits.CellAttributes;
 import jexer.bits.Color;
 import jexer.bits.ColorTheme;
-import jexer.bits.CellAttributes;
 import jexer.bits.GraphicsChars;
 import jexer.event.TKeypressEvent;
 import jexer.event.TMouseEvent;
-import static jexer.TKeypress.*;
 
 /**
  * TEditColorThemeWindow provides an easy UI for users to alter the running

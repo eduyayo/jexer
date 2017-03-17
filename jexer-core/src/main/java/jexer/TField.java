@@ -28,11 +28,20 @@
  */
 package jexer;
 
+import static jexer.TKeypress.kbBackspace;
+import static jexer.TKeypress.kbBackspaceDel;
+import static jexer.TKeypress.kbDel;
+import static jexer.TKeypress.kbEnd;
+import static jexer.TKeypress.kbEnter;
+import static jexer.TKeypress.kbHome;
+import static jexer.TKeypress.kbIns;
+import static jexer.TKeypress.kbLeft;
+import static jexer.TKeypress.kbRight;
+
 import jexer.bits.CellAttributes;
 import jexer.bits.GraphicsChars;
 import jexer.event.TKeypressEvent;
 import jexer.event.TMouseEvent;
-import static jexer.TKeypress.*;
 
 /**
  * TField implements an editable text field.

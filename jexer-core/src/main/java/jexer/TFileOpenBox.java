@@ -28,12 +28,14 @@
  */
 package jexer;
 
+import static jexer.TKeypress.kbEnd;
+import static jexer.TKeypress.kbEsc;
+
 import java.io.File;
 import java.io.IOException;
 
 import jexer.bits.GraphicsChars;
 import jexer.event.TKeypressEvent;
-import static jexer.TKeypress.*;
 
 /**
  * TFileOpenBox is a system-modal dialog for selecting a file to open.  Call

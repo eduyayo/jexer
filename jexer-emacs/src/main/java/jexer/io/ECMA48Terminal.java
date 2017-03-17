@@ -28,12 +28,39 @@
  */
 package jexer.io;
 
+import static jexer.TKeypress.kbBackTab;
+import static jexer.TKeypress.kbDel;
+import static jexer.TKeypress.kbDown;
+import static jexer.TKeypress.kbEnd;
+import static jexer.TKeypress.kbEnter;
+import static jexer.TKeypress.kbEsc;
+import static jexer.TKeypress.kbF1;
+import static jexer.TKeypress.kbF10;
+import static jexer.TKeypress.kbF11;
+import static jexer.TKeypress.kbF12;
+import static jexer.TKeypress.kbF2;
+import static jexer.TKeypress.kbF3;
+import static jexer.TKeypress.kbF4;
+import static jexer.TKeypress.kbF5;
+import static jexer.TKeypress.kbF6;
+import static jexer.TKeypress.kbF7;
+import static jexer.TKeypress.kbF8;
+import static jexer.TKeypress.kbF9;
+import static jexer.TKeypress.kbHome;
+import static jexer.TKeypress.kbIns;
+import static jexer.TKeypress.kbLeft;
+import static jexer.TKeypress.kbPgDn;
+import static jexer.TKeypress.kbPgUp;
+import static jexer.TKeypress.kbRight;
+import static jexer.TKeypress.kbTab;
+import static jexer.TKeypress.kbUp;
+
 import java.io.BufferedReader;
 import java.io.FileDescriptor;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.IOException;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
@@ -41,8 +68,8 @@ import java.io.Reader;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 import java.util.LinkedList;
+import java.util.List;
 
 import jexer.bits.Color;
 import jexer.event.TInputEvent;
@@ -52,7 +79,6 @@ import jexer.event.TResizeEvent;
 import jexer.session.SessionInfo;
 import jexer.session.TSessionInfo;
 import jexer.session.TTYSessionInfo;
-import static jexer.TKeypress.*;
 
 /**
  * This class reads keystrokes and mouse events and emits output to ANSI

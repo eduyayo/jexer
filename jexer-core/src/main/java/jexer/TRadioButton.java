@@ -28,11 +28,12 @@
  */
 package jexer;
 
+import static jexer.TKeypress.kbSpace;
+
 import jexer.bits.CellAttributes;
 import jexer.bits.GraphicsChars;
 import jexer.event.TKeypressEvent;
 import jexer.event.TMouseEvent;
-import static jexer.TKeypress.*;
 
 /**
  * TRadioButton implements a selectable radio button.

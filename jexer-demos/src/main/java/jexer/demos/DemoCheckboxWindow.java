@@ -28,7 +28,10 @@
  */
 package jexer.demos;
 
-import jexer.*;
+import jexer.TAction;
+import jexer.TApplication;
+import jexer.TRadioGroup;
+import jexer.TWindow;
 
 /**
  * This window demonstates the TRadioGroup, TRadioButton, and TCheckbox

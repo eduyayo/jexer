@@ -38,10 +38,11 @@ import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.Toolkit;
 import java.awt.geom.Rectangle2D;
-import java.awt.image.BufferedImage;
 import java.awt.image.BufferStrategy;
+import java.awt.image.BufferedImage;
 import java.io.InputStream;
 import java.util.Date;
+
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 

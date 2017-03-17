@@ -28,7 +28,11 @@
  */
 package jexer.demos;
 
-import jexer.*;
+import jexer.TAction;
+import jexer.TApplication;
+import jexer.TInputBox;
+import jexer.TMessageBox;
+import jexer.TWindow;
 
 /**
  * This window demonstates the TMessageBox and TInputBox widgets.

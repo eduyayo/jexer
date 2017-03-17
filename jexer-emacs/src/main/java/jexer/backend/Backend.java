@@ -42,7 +42,7 @@ import jexer.session.SessionInfo;
 public abstract class Backend {
 
     /**
-     * The session information.
+     * The session information. 
      */
     protected SessionInfo sessionInfo;
 

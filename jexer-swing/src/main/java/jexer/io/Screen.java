@@ -223,7 +223,7 @@ public abstract class Screen {
      * @return attributes at (x, y)
      */
     public final CellAttributes getAttrXY(final int x, final int y) {
-        CellAttributes attr = new CellAttributes();
+        final CellAttributes attr = new CellAttributes();
         if ((x >= 0) && (x < width) && (y >= 0) && (y < height)) {
             attr.setTo(logical[x][y]);
         }
@@ -326,8 +326,8 @@ public abstract class Screen {
             return;
         }
 
-        int X = x + offsetX;
-        int Y = y + offsetY;
+        final int X = x + offsetX;
+        final int Y = y + offsetY;
 
         // System.err.printf("putCharXY: %d, %d, %c\n", X, Y, ch);
 
@@ -366,8 +366,8 @@ public abstract class Screen {
             return;
         }
 
-        int X = x + offsetX;
-        int Y = y + offsetY;
+        final int X = x + offsetX;
+        final int Y = y + offsetY;
 
         // System.err.printf("putCharXY: %d, %d, %c\n", X, Y, ch);
 
@@ -390,7 +390,7 @@ public abstract class Screen {
 
         int i = x;
         for (int j = 0; j < str.length(); j++) {
-            char ch = str.charAt(j);
+            final char ch = str.charAt(j);
             putCharXY(i, y, ch, attr);
             i++;
             if (i == width) {
@@ -411,7 +411,7 @@ public abstract class Screen {
 
         int i = x;
         for (int j = 0; j < str.length(); j++) {
-            char ch = str.charAt(j);
+            final char ch = str.charAt(j);
             putCharXY(i, y, ch);
             i++;
             if (i == width) {
@@ -642,8 +642,8 @@ public abstract class Screen {
         final CellAttributes border, final CellAttributes background,
         final int borderType, final boolean shadow) {
 
-        int boxWidth = right - left;
-        int boxHeight = bottom - top;
+        final int boxWidth = right - left;
+        final int boxHeight = bottom - top;
 
         char cTopLeft;
         char cTopRight;
@@ -719,15 +719,15 @@ public abstract class Screen {
     public final void drawBoxShadow(final int left, final int top,
         final int right, final int bottom) {
 
-        int boxTop = top;
-        int boxLeft = left;
-        int boxWidth = right - left;
-        int boxHeight = bottom - top;
-        CellAttributes shadowAttr = new CellAttributes();
+        final int boxTop = top;
+        final int boxLeft = left;
+        final int boxWidth = right - left;
+        final int boxHeight = bottom - top;
+        final CellAttributes shadowAttr = new CellAttributes();
 
         // Shadows do not honor clipping but they DO honor offset.
-        int oldClipRight = clipRight;
-        int oldClipBottom = clipBottom;
+        final int oldClipRight = clipRight;
+        final int oldClipBottom = clipBottom;
         /*
         clipRight = boxWidth + 2;
         clipBottom = boxHeight + 1;

@@ -28,10 +28,13 @@
  */
 package jexer.net;
 
-import java.io.OutputStream;
-import java.io.IOException;
+import static jexer.net.TelnetSocket.C_CR;
+import static jexer.net.TelnetSocket.C_LF;
+import static jexer.net.TelnetSocket.C_NUL;
+import static jexer.net.TelnetSocket.TELNET_IAC;
 
-import static jexer.net.TelnetSocket.*;
+import java.io.IOException;
+import java.io.OutputStream;
 
 /**
  * TelnetOutputStream works with TelnetSocket to perform the telnet protocol.

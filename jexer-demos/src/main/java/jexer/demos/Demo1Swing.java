@@ -34,7 +34,7 @@ import jexer.backend.SwingBackend;
  * This class is the main driver for a simple demonstration of Jexer's
  * capabilities.
  */
-public class Demo1Swing {
+public class Demo1Swing { 
     /**
      * Main entry point.
      *
@@ -42,9 +42,9 @@ public class Demo1Swing {
      */
     public static void main(final String [] args) {
         try {
-            DemoApplication app = new DemoApplication(new SwingBackend());
+            final DemoApplication app = new DemoApplication(new SwingBackend());
             (new Thread(app)).start();
-        } catch (Exception e) {
+        } catch (final Exception e) {
             e.printStackTrace();
         }
     }

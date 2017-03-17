@@ -28,14 +28,33 @@
  */
 package jexer.net;
 
-import java.io.InputStream;
+import static jexer.net.TelnetSocket.C_CR;
+import static jexer.net.TelnetSocket.C_LF;
+import static jexer.net.TelnetSocket.C_NUL;
+import static jexer.net.TelnetSocket.TELNET_AO;
+import static jexer.net.TelnetSocket.TELNET_AYT;
+import static jexer.net.TelnetSocket.TELNET_BRK;
+import static jexer.net.TelnetSocket.TELNET_DM;
+import static jexer.net.TelnetSocket.TELNET_DO;
+import static jexer.net.TelnetSocket.TELNET_DONT;
+import static jexer.net.TelnetSocket.TELNET_EC;
+import static jexer.net.TelnetSocket.TELNET_EL;
+import static jexer.net.TelnetSocket.TELNET_GA;
+import static jexer.net.TelnetSocket.TELNET_IAC;
+import static jexer.net.TelnetSocket.TELNET_IP;
+import static jexer.net.TelnetSocket.TELNET_NOP;
+import static jexer.net.TelnetSocket.TELNET_SB;
+import static jexer.net.TelnetSocket.TELNET_SE;
+import static jexer.net.TelnetSocket.TELNET_WILL;
+import static jexer.net.TelnetSocket.TELNET_WONT;
+
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.TreeMap;
 
 import jexer.session.SessionInfo;
-import static jexer.net.TelnetSocket.*;
 
 /**
  * TelnetInputStream works with TelnetSocket to perform the telnet protocol.

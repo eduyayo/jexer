@@ -28,13 +28,17 @@
  */
 package jexer.demos;
 
-import java.io.*;
-import java.util.*;
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
 
-import jexer.*;
+import jexer.TApplication;
+import jexer.TEditColorThemeWindow;
 import jexer.backend.Backend;
-import jexer.event.*;
-import jexer.menu.*;
+import jexer.event.TMenuEvent;
+import jexer.menu.TMenu;
+import jexer.menu.TMenuItem;
+import jexer.menu.TSubMenu;
 
 /**
  * The demo application itself.

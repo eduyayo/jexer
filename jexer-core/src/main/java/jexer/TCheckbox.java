@@ -29,6 +29,7 @@
 package jexer;
 
 import static jexer.TKeypress.kbSpace;
+
 import jexer.bits.CellAttributes;
 import jexer.bits.GraphicsChars;
 import jexer.event.TKeypressEvent;

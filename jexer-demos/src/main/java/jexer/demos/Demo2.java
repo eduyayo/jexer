@@ -28,9 +28,6 @@
  */
 package jexer.demos;
 
-import java.net.*;
-import jexer.net.*;
-
 /**
  * This class is the main driver for a simple demonstration of Jexer's
  * capabilities.  Rather than run locally, it serves a Jexer UI over a TCP

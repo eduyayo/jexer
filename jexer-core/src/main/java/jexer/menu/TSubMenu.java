@@ -28,12 +28,18 @@
  */
 package jexer.menu;
 
+import static jexer.TKeypress.kbDown;
+import static jexer.TKeypress.kbEnter;
+import static jexer.TKeypress.kbEsc;
+import static jexer.TKeypress.kbLeft;
+import static jexer.TKeypress.kbRight;
+import static jexer.TKeypress.kbUp;
+
 import jexer.TKeypress;
 import jexer.TWidget;
 import jexer.bits.CellAttributes;
 import jexer.bits.GraphicsChars;
 import jexer.event.TKeypressEvent;
-import static jexer.TKeypress.*;
 
 /**
  * TSubMenu is a special case menu item that wraps another TMenu.

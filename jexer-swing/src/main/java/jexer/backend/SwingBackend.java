@@ -45,10 +45,10 @@ public final class SwingBackend extends Backend<SwingTerminal> {
      *
      * @param listener the object this backend needs to wake up when new
      * input comes in
-     */
+     */ 
     public SwingBackend() {
         // Create a screen
-        SwingScreen screen = new SwingScreen();
+        final SwingScreen screen = new SwingScreen();
         this.screen = screen;
 
         // Create the Swing event listeners

@@ -28,9 +28,35 @@
  */
 package jexer;
 
+import static jexer.TKeypress.kbAltDown;
+import static jexer.TKeypress.kbAltLeft;
+import static jexer.TKeypress.kbAltPgDn;
+import static jexer.TKeypress.kbAltPgUp;
+import static jexer.TKeypress.kbAltRight;
+import static jexer.TKeypress.kbAltUp;
+import static jexer.TKeypress.kbBackTab;
+import static jexer.TKeypress.kbCtrlDown;
+import static jexer.TKeypress.kbCtrlLeft;
+import static jexer.TKeypress.kbCtrlPgDn;
+import static jexer.TKeypress.kbCtrlPgUp;
+import static jexer.TKeypress.kbCtrlRight;
+import static jexer.TKeypress.kbCtrlUp;
+import static jexer.TKeypress.kbDown;
+import static jexer.TKeypress.kbEnd;
+import static jexer.TKeypress.kbEnter;
+import static jexer.TKeypress.kbHome;
+import static jexer.TKeypress.kbShiftDown;
+import static jexer.TKeypress.kbShiftLeft;
+import static jexer.TKeypress.kbShiftPgDn;
+import static jexer.TKeypress.kbShiftPgUp;
+import static jexer.TKeypress.kbShiftRight;
+import static jexer.TKeypress.kbShiftTab;
+import static jexer.TKeypress.kbShiftUp;
+import static jexer.TKeypress.kbTab;
+import static jexer.TKeypress.kbUp;
+
 import jexer.event.TKeypressEvent;
 import jexer.event.TMouseEvent;
-import static jexer.TKeypress.*;
 
 /**
  * TTreeView implements a simple tree view.

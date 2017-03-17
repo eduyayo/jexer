@@ -30,8 +30,12 @@ package jexer.demos;
 
 import java.io.IOException;
 
-import jexer.*;
-import jexer.event.*;
+import jexer.TApplication;
+import jexer.TDirectoryTreeItem;
+import jexer.TTreeView;
+import jexer.TWidget;
+import jexer.TWindow;
+import jexer.event.TResizeEvent;
 
 /**
  * This window demonstates the TTreeView widget.

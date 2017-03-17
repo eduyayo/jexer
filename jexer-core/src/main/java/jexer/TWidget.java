@@ -28,9 +28,18 @@
  */
 package jexer;
 
+import static jexer.TKeypress.kbBackTab;
+import static jexer.TKeypress.kbDown;
+import static jexer.TKeypress.kbEnter;
+import static jexer.TKeypress.kbLeft;
+import static jexer.TKeypress.kbRight;
+import static jexer.TKeypress.kbShiftTab;
+import static jexer.TKeypress.kbTab;
+import static jexer.TKeypress.kbUp;
+
 import java.io.IOException;
-import java.util.List;
 import java.util.LinkedList;
+import java.util.List;
 
 import jexer.bits.ColorTheme;
 import jexer.event.TCommandEvent;
@@ -41,7 +50,6 @@ import jexer.event.TMouseEvent;
 import jexer.event.TResizeEvent;
 import jexer.io.Screen;
 import jexer.menu.TMenu;
-import static jexer.TKeypress.*;
 
 /**
  * TWidget is the base class of all objects that can be drawn on screen or

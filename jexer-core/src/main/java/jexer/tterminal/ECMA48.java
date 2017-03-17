@@ -28,9 +28,63 @@
  */
 package jexer.tterminal;
 
+import static jexer.TKeypress.kbAltEsc;
+import static jexer.TKeypress.kbBackTab;
+import static jexer.TKeypress.kbBackspace;
+import static jexer.TKeypress.kbCtrlF1;
+import static jexer.TKeypress.kbCtrlF10;
+import static jexer.TKeypress.kbCtrlF11;
+import static jexer.TKeypress.kbCtrlF12;
+import static jexer.TKeypress.kbCtrlF2;
+import static jexer.TKeypress.kbCtrlF3;
+import static jexer.TKeypress.kbCtrlF4;
+import static jexer.TKeypress.kbCtrlF5;
+import static jexer.TKeypress.kbCtrlF6;
+import static jexer.TKeypress.kbCtrlF7;
+import static jexer.TKeypress.kbCtrlF8;
+import static jexer.TKeypress.kbCtrlF9;
+import static jexer.TKeypress.kbDel;
+import static jexer.TKeypress.kbDown;
+import static jexer.TKeypress.kbEnd;
+import static jexer.TKeypress.kbEnter;
+import static jexer.TKeypress.kbEsc;
+import static jexer.TKeypress.kbF1;
+import static jexer.TKeypress.kbF10;
+import static jexer.TKeypress.kbF11;
+import static jexer.TKeypress.kbF12;
+import static jexer.TKeypress.kbF2;
+import static jexer.TKeypress.kbF3;
+import static jexer.TKeypress.kbF4;
+import static jexer.TKeypress.kbF5;
+import static jexer.TKeypress.kbF6;
+import static jexer.TKeypress.kbF7;
+import static jexer.TKeypress.kbF8;
+import static jexer.TKeypress.kbF9;
+import static jexer.TKeypress.kbHome;
+import static jexer.TKeypress.kbIns;
+import static jexer.TKeypress.kbLeft;
+import static jexer.TKeypress.kbPgDn;
+import static jexer.TKeypress.kbPgUp;
+import static jexer.TKeypress.kbRight;
+import static jexer.TKeypress.kbShiftF1;
+import static jexer.TKeypress.kbShiftF10;
+import static jexer.TKeypress.kbShiftF11;
+import static jexer.TKeypress.kbShiftF12;
+import static jexer.TKeypress.kbShiftF2;
+import static jexer.TKeypress.kbShiftF3;
+import static jexer.TKeypress.kbShiftF4;
+import static jexer.TKeypress.kbShiftF5;
+import static jexer.TKeypress.kbShiftF6;
+import static jexer.TKeypress.kbShiftF7;
+import static jexer.TKeypress.kbShiftF8;
+import static jexer.TKeypress.kbShiftF9;
+import static jexer.TKeypress.kbShiftTab;
+import static jexer.TKeypress.kbTab;
+import static jexer.TKeypress.kbUp;
+
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.IOException;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.Reader;
@@ -42,11 +96,10 @@ import java.util.LinkedList;
 import java.util.List;
 
 import jexer.TKeypress;
-import jexer.event.TMouseEvent;
-import jexer.bits.Color;
 import jexer.bits.Cell;
 import jexer.bits.CellAttributes;
-import static jexer.TKeypress.*;
+import jexer.bits.Color;
+import jexer.event.TMouseEvent;
 
 /**
  * This implements a complex ANSI ECMA-48/ISO 6429/ANSI X3.64 type consoles,

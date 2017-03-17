@@ -28,6 +28,10 @@
  */
 package jexer;
 
+import static jexer.TKeypress.kbLeft;
+import static jexer.TKeypress.kbRight;
+import static jexer.TKeypress.kbSpace;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,7 +39,6 @@ import jexer.bits.CellAttributes;
 import jexer.bits.GraphicsChars;
 import jexer.event.TKeypressEvent;
 import jexer.event.TMouseEvent;
-import static jexer.TKeypress.*;
 
 /**
  * TTreeItem is a single item in a tree view.

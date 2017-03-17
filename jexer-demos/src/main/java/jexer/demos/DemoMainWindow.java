@@ -28,7 +28,13 @@
  */
 package jexer.demos;
 
-import jexer.*;
+import jexer.TAction;
+import jexer.TApplication;
+import jexer.TEditColorThemeWindow;
+import jexer.TLabel;
+import jexer.TProgressBar;
+import jexer.TTimer;
+import jexer.TWindow;
 
 /**
  * This is the main "demo" application window.  It makes use of the TTimer,

@@ -28,13 +28,25 @@
  */
 package jexer;
 
+import static jexer.TKeypress.kbBackTab;
+import static jexer.TKeypress.kbDown;
+import static jexer.TKeypress.kbEnd;
+import static jexer.TKeypress.kbEnter;
+import static jexer.TKeypress.kbHome;
+import static jexer.TKeypress.kbLeft;
+import static jexer.TKeypress.kbPgDn;
+import static jexer.TKeypress.kbPgUp;
+import static jexer.TKeypress.kbRight;
+import static jexer.TKeypress.kbShiftTab;
+import static jexer.TKeypress.kbTab;
+import static jexer.TKeypress.kbUp;
+
 import java.util.ArrayList;
 import java.util.List;
 
 import jexer.bits.CellAttributes;
 import jexer.event.TKeypressEvent;
 import jexer.event.TMouseEvent;
-import static jexer.TKeypress.*;
 
 /**
  * TList shows a list of strings, and lets the user select one.

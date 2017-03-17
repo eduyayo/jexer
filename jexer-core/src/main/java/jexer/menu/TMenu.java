@@ -28,6 +28,22 @@
  */
 package jexer.menu;
 
+import static jexer.TKeypress.kbAltO;
+import static jexer.TKeypress.kbAltX;
+import static jexer.TKeypress.kbCtrlC;
+import static jexer.TKeypress.kbCtrlF5;
+import static jexer.TKeypress.kbCtrlV;
+import static jexer.TKeypress.kbCtrlX;
+import static jexer.TKeypress.kbDown;
+import static jexer.TKeypress.kbEnter;
+import static jexer.TKeypress.kbEsc;
+import static jexer.TKeypress.kbF5;
+import static jexer.TKeypress.kbF6;
+import static jexer.TKeypress.kbLeft;
+import static jexer.TKeypress.kbRight;
+import static jexer.TKeypress.kbShiftF6;
+import static jexer.TKeypress.kbUp;
+
 import jexer.TApplication;
 import jexer.TKeypress;
 import jexer.TWidget;
@@ -37,7 +53,6 @@ import jexer.bits.GraphicsChars;
 import jexer.bits.MnemonicString;
 import jexer.event.TKeypressEvent;
 import jexer.event.TMouseEvent;
-import static jexer.TKeypress.*;
 
 /**
  * TMenu is a top-level collection of TMenuItems.

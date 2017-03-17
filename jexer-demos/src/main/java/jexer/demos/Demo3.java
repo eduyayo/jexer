@@ -28,8 +28,6 @@
  */
 package jexer.demos;
 
-import java.io.*;
-
 /**
  * This class is the main driver for a simple demonstration of Jexer's
  * capabilities.  This one passes separate Reader/Writer to TApplication,
