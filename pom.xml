@@ -4,20 +4,41 @@
 	<groupId>com.pigdroid</groupId>
 	<artifactId>jexer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>pom</packaging>
 	<name>jexer</name>
 
 	<properties>
 	</properties>
 
-
-	<dependencies>
-	</dependencies>
+	<modules>
+		<module>jexer-core</module>
+		<module>jexer-emacs</module>
+		<module>jexer-swing</module>
+		<module>jexer-demos</module>
+	</modules>
 
 	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<artifactId>jexer-core</artifactId>
+				<groupId>com.pigdroid</groupId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<artifactId>jexer-swing</artifactId>
+				<groupId>com.pigdroid</groupId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<artifactId>jexer-emacs</artifactId>
+				<groupId>com.pigdroid</groupId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+		</dependencies>
 	</dependencyManagement>
 
 	<build>
+		<pluginManagement>
 			<plugins>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
@@ -29,6 +50,7 @@
 					</configuration>
 				</plugin>
 			</plugins>
+		</pluginManagement>
 	</build>
 
 	<description>jexer with maven</description>
